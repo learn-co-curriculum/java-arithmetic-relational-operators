@@ -76,26 +76,26 @@ int secondNumber = 10;
 - The plus symbol (`+`) is a binary operator that adds the values on
   either side of the operator. Let's look at the "expression"
   `firstNumber + secondNumber`.
-    - `firstNumber + secondNumber` is an expression. An **expression** is a
+  - `firstNumber + secondNumber` is an expression. An **expression** is a
       combination of operators and variables that evaluate to a single value.
-    - When the computer evaluates the expression, we tend to say it "returns"
-      that value.
-    - Once the value is returned, it can then be used in other expressions.
-    - Expressions cannot be left on its own line within the source code. If they
-      are, then it will result in a compilation error. Expressions aren't a full
-      instruction to the computer until its value is assigned to a variable or
-      used in another expression.
-    - Combining the expression with the assignment operator will provide a full
-      statement: `int result = firstNumber + secondNumber;`. This is an
-      instruction that the computer can understand and compile.
-        - The `firstNumber` variable has the value `20`.
-        - The `secondNumber` variable has the value `10`.
-        - The code will take `20` and add it to `10` to return the value of `30`.
-        - The variable `result` of type `int` is then declared.
-        - Finally, the `result` variable is assigned to the value of `30`.
-    - Note how the operators all have spaces between them and the variable
-      operands. This is common stylistic syntax within Java to have spaces
-      between binary operators.
+  - When the computer evaluates the expression, we tend to say it "returns"
+    that value.
+  - Once the value is returned, it can then be used in other expressions.
+  - Expressions cannot be left on its own line within the source code. If they
+    are, then it will result in a compilation error. Expressions aren't a full
+    instruction to the computer until its value is assigned to a variable or
+    used in another expression.
+  - Combining the expression with the assignment operator will provide a full
+    statement: `int result = firstNumber + secondNumber;`. This is an
+    instruction that the computer can understand and compile.
+    - The `firstNumber` variable has the value `20`.
+    - The `secondNumber` variable has the value `10`.
+    - The code will take `20` and add it to `10` to return the value of `30`.
+    - The variable `result` of type `int` is then declared.
+    - Finally, the `result` variable is assigned to the value of `30`.
+  - Note how the operators all have spaces between them and the variable
+    operands. This is common stylistic syntax within Java to have spaces
+    between binary operators.
 
 Here is the full list of Java arithmetic operators, including the `+` operator
 again, so we have an easy place to look them all up:
@@ -108,11 +108,11 @@ again, so we have an easy place to look them all up:
   operator: `firstNumber * secondNumber` returns `200`.
 - `/` is a binary operator that divides the left-hand operand by the right-hand
   operand: `firstNumber / secondNumber` return `2`.
-    - We will talk about integer division shortly.
+  - We will talk about integer division shortly.
 - `%` is the modulus operator (or mod for short). It is a binary operator that
   returns the remainder value of dividing two numbers:
-    - `firstNumber % secondNumber` returns `0` because 20 divided by 10 is an
-      even 2 with a remainder of 0.
+  - `firstNumber % secondNumber` returns `0` because 20 divided by 10 is an
+    even 2 with a remainder of 0.
 
 ### Integer Division
 
