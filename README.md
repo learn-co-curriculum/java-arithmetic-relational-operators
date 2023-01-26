@@ -61,8 +61,6 @@ in Java:
 | `*`      | Multiplication |
 | `/`      | Division       |
 | `%`      | Modulus        |
-| `++`     | Increment      |
-| `--`     | Decrement      |
 
 These operators can be applied to numerical data types, like `int` and
 `double`. They can also be used on `char` data types, but we will learn more
@@ -108,75 +106,13 @@ again, so we have an easy place to look them all up:
   left-hand operand: `firstNumber - secondNumber` returns `10`.
 - `*` is a binary operator that multiplies the values on either side of the
   operator: `firstNumber * secondNumber` returns `200`.
-- `/` is a binary operator that divides the right-hand operand by the left-hand
+- `/` is a binary operator that divides the left-hand operand by the right-hand
   operand: `firstNumber / secondNumber` return `2`.
     - We will talk about integer division shortly.
 - `%` is the modulus operator (or mod for short). It is a binary operator that
   returns the remainder value of dividing two numbers:
     - `firstNumber % secondNumber` returns `0` because 20 divided by 10 is an
       even 2 with a remainder of 0.
-- `++` is the increment operator. The increment operator is a unary operator
-  and increases the value of the single operand by 1:
-    - `firstNumber++` returns `21`.
-    - Notice that the increment operator is placed directly after the variable
-      name with no space between the variable name and the operand.
-- `--` is the decrement operator. The decrement operator is a unary operator and
-  decreases the value of the single operand by 1:
-    - `secondNumber--` returns `9`
-    - Notice that the decrement operator is placed directly after the variable
-      name with no spaces between the variable name and the operand.
-
-Note that both the increment and decrement operators operate on the operand
-and assign it the new value. For example:
-
-```java
-firstNumber++; 
-```
-
-Has the exact same result as:
-
-```java
-firstNumber = firstNumber + 1; 
-```
-
-Another thing we should note about the increment and decrement operators is that
-the operator could be placed directly before or after the variable. In the
-examples above, we placed the operators after the variable. But we could have
-also done this:
-
-```java
-++firstNumber;
---secondNumber;
-```
-
-When we place the operator before the variable, it will still have the same
-result as before: `++firstNumber` will return `21` and `--secondNumber` will
-return `9`. But order still matters! Let's take a look at an example of when
-the placement of the increment or decrement operator would make a difference:
-
-```java
-int result = ++firstNumber;
-System.out.println(result);
-
-// Reset firstNumber to 20
-firstNumber = 20;
-result = firstNumber++;
-System.out.println(result);
-```
-
-Now let's look at the output of the code above:
-
-```text
-21
-20
-```
-
-So why are the outputs different? When the first line is run with the `++`
-preceding the variable, Java will first perform the operation of
-`firstNumber = firstNumber + 1;` before assigning the value of `firstNumber`
-to `result`. The next time when the increment operator is used is in the
-format of `firstNumber++`. When the `++` follows the variable, Java will
-access the value of `firstNumber` before completing the increment.
 
 ### Integer Division
 
