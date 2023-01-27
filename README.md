@@ -34,10 +34,11 @@ that the value must be the same data type as the variable.
 String example = "this is a sample string"; 
 ```
 
-In the above example, we are combining the variable definition `String example`
+In the above example, we are combining the variable declaration `String example`
 and the assignment `example = "this is a sample string"`. This does not have to
 be the case. For example, we could declare the variable earlier in the program
-and then initialize it later.
+and then initialize it later as we saw in the last lesson and now this lesson
+too!
 
 ```java
 String example; 
@@ -46,6 +47,9 @@ String example;
 
 example = "another sample value for my string";  
 ```
+
+It should be noted that the variable cannot be used until it is initialized a
+value.
 
 ## Arithmetic Operators
 
@@ -81,7 +85,7 @@ int secondNumber = 10;
   - When the computer evaluates the expression, we tend to say it "returns"
     that value.
   - Once the value is returned, it can then be used in other expressions.
-  - Expressions cannot be left on its own line within the source code. If they
+  - An expression cannot be left on its own line within the source code. If they
     are, then it will result in a compilation error. Expressions aren't a full
     instruction to the computer until its value is assigned to a variable or
     used in another expression.
@@ -163,6 +167,24 @@ public class Main {
 
 Now when we run the program, it will print out `1.75`.
 
+Note: This will perform real division too if only one of the numbers is a
+`double`:
+
+```java
+package org.example;
+
+public class Main {
+    public static void main(String[] args) {
+        
+        // This will give a quotient of 1.75 still since 7.0 is a double
+        double result1 = 7.0 / 4;
+        
+        // This will give a quotient of 1.75 still since 4.0 is a double
+        double result2 = 7 / 4.0;
+    }
+}
+```
+
 ## Relational Operators
 
 Let's say we would like to compare two values to each other. Are there any
@@ -194,6 +216,24 @@ in a boolean variable as well:
 
 ```java
 boolean isLarger = firstNumber > secondNumber;
+```
+
+### Note on the Assignment Operator
+
+Now that we have seen both the equal operator (`==`) and the assignment operator
+(`=`), it is important to not get the two confused.
+
+When we assign a variable a value, we are copying the value on the right-hand
+side of the `=` into the variable on the left-hand side as such:
+
+![assignment-operator-visual](https://curriculum-content.s3.amazonaws.com/java-mod-1/assignment/assignment-operator-visual.png)
+
+It is important to know that the `=` operator **does not** mean "equals" like it
+does in mathematics. If we want to compare two numerical values, we can use the
+`==` operator:
+
+```java
+boolean isEqual = firstNumber == secondNumber;
 ```
 
 ## Combining Operators
