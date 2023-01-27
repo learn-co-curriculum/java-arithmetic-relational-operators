@@ -233,7 +233,7 @@ does in mathematics. If we want to compare two numerical values, we can use the
 `==` operator:
 
 ```java
-boolean isEqual = firstNumber == secondNumber;
+System.out.println(firstNumber == secondNumber);
 ```
 
 ## Combining Operators
